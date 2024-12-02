@@ -1,9 +1,9 @@
 "use client";
 
-//backend API
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL; 
-
 export const getTextFromAudio = async (userAudioData: Blob) => {
+  //backend API
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL; 
+  
   const audioFile = new File([userAudioData], "userVoiceInput", {
     type: "audio/mpeg",
   });
